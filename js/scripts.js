@@ -1,11 +1,11 @@
 // Business Logic
 function check(number) {
   if (number >= 4 && number <= 7) {
-    $("#cSharp").show();
+    $("#cSharp").fadeIn();
   } else if (number > 7 && number <= 9) {
-    $("#ruby").show();
+    $("#ruby").fadeIn();
   } else if (number > 9 && number <= 12) {
-    $("#python").show();
+    $("#python").fadeIn();
   }
 }
 
@@ -34,24 +34,24 @@ $(document).ready(function() {
   $("#nameNext").click(function(event) {
     event.preventDefault();
     $("div#enterName").hide();
-    $("div#question1").show();
+    $("div#question1").fadeIn();
   });
 
   $("#q1Next").click(function(event) {
     event.preventDefault();
     $("div#question1").hide();
-    $("div#question2").show();
+    $("div#question2").fadeIn();
   });
 
   $("#q2Next").click(function(event) {
     event.preventDefault();
     $("div#question2").hide();
-    $("div#question3").show();
+    $("div#question3").fadeIn();
   });
 
   $("#q3Next").click(function(event) {
     event.preventDefault();
     $("div#question3").hide();
-    $("div#question4").show();
+    $("div#question4").fadeIn();
   });
 });

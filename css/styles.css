@@ -29,8 +29,16 @@ body {
 
 }
 
-#output p {
+button {
+  margin-top: 10px;
+}
+
+.text {
   font-size: 5em;
+}
+
+.subtext {
+  font-size: 20px;
 }
 
 .jumbotron {
@@ -51,6 +59,18 @@ body {
 .container h3 {
   text-align: center;
   margin-bottom: 40px;
+}
+
+.resize {
+  height: 230px;
+  width: 250px;
+  margin: 20px;
+  border-radius: 80%;
+}
+
+.resize:hover {
+  zoom: 110%;
+  transition: 0.8s;
 }
 
 #intro, .panel, .panel-heading {
