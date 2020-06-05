@@ -10,11 +10,19 @@ _This site will contain a brief quiz in which users will input basic information
 
 ## Setup/Installation Requirements
 
+#### Requirements
+
+* _GitBash or a preferred computer terminal_
+* _Web browser_
+* _Optional: code editor - suggested VSCode-_
+
+#### Install
+
 * _Navigate to my github repository at: https://github.com/hubba180/programmer-quiz_
-* _click the green clone or download button and copy the ".git" link_
+* _Click the green clone or download button and copy the ".git" link_
 * _On your homescreen open up your preferred terminal - GitBash recommended - and clone the file to your desktop. If your using GitBash the command is $ git clone {insert url}_
 * _Navigate into the newly cloned folder and open index.html in any web browser_
-* _to view code with GitBash: use $ code ._
+* _To view code with GitBash: use $ code ._
 
 ## Known Bugs
 
