@@ -14,6 +14,7 @@ function check(number) {
 $(document).ready(function() {
   
   $("form#questions").submit(function(event) {
+    const name = $("#name").val();
     const answer1 = parseInt($("input:radio[name=animalQ]:checked").val());
     const answer2 = parseInt($("input:radio[name=burningHouseQ]:checked").val());
     const answer3 = parseInt($("input:radio[name=importantQ]:checked").val());
@@ -24,8 +25,15 @@ $(document).ready(function() {
       alert("Wait! you forgot to fill out all the fields!");
     } else {
           event.preventDefault();
+          $(".placeName").text(name);
           check(score);
         }
+  });
+
+  $("#nameNext").click(function(event) {
+    event.preventDefault();
+    $("div#enterName").hide();
+    $("div#question1").slideToggle();
   });
 
   $("#q1Next").click(function(event) {
