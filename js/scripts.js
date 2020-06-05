@@ -1,11 +1,11 @@
 // Business Logic
 function check(number) {
   if (number >= 4 && number <= 7) {
-    //do something
+    $("#cSharp").show();
   } else if (number > 7 && number <= 9) {
-    // do something else
-  } else {
-    // do another thing
+    $("#ruby").show();
+  } else if (number > 9 && number <= 12) {
+    $("#python").show();
   }
 }
 
@@ -19,8 +19,13 @@ $(document).ready(function() {
     const answer3 = parseInt($("input:radio[name=importantQ]:checked").val());
     const answer4 = parseInt($("input:radio[name=genieQ]:checked").val());
     const score = answer1 + answer2 + answer3 + answer4;
-    event.preventDefault();
-    $("div#output").text(score);
+
+    if (isNaN(score)) {
+      alert("Wait! you forgot to fill out all the fields!");
+    } else {
+          event.preventDefault();
+          check(score);
+        }
   });
 
   $("#q1Next").click(function(event) {

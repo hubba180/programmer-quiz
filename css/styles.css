@@ -1,3 +1,7 @@
 #question2, #question3, #question4 {
   display: none;
 }
+
+#cSharp, #ruby, #python {
+  display: none;
+}
