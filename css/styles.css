@@ -1,20 +1,37 @@
 @media screen and (max-height: 870px) {
   img {
     width: 100vw;
-    height: 30vh;
+    height: 200px;
   }
 }
 
 @media screen and (min-height: 871px) {
   img {
     width: 100vw;
-    height: 50vh;
+    height: 300px;
+  }
+
+  @media screen and (max-width: 750px) {
+    img {
+      width: 100vw;
+      height: 50px;
+    }
   }
 }
 
+img:hover {
+  zoom: 30px;
+  transition: 0.2s;
+}
 
 .jumbotron {
   margin-bottom: 0px;
+}
+
+#introWords {
+  /* color: white; */
+  background-color: teal;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #question2, #question3, #question4 {
@@ -26,7 +43,6 @@
 }
 
 #output {
-  background-image: url(../img/damian-markutt.jpg);
   display: block;
   text-align: center;
   margin-top: 100px;
