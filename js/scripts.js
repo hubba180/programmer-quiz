@@ -25,6 +25,7 @@ $(document).ready(function() {
       alert("Wait! you forgot to fill out all the fields!");
     } else {
           event.preventDefault();
+          $("#survey").hide();
           $(".placeName").text(name);
           check(score);
         }
@@ -33,24 +34,24 @@ $(document).ready(function() {
   $("#nameNext").click(function(event) {
     event.preventDefault();
     $("div#enterName").hide();
-    $("div#question1").slideToggle();
+    $("div#question1").show();
   });
 
   $("#q1Next").click(function(event) {
     event.preventDefault();
     $("div#question1").hide();
-    $("div#question2").slideToggle();
+    $("div#question2").show();
   });
 
   $("#q2Next").click(function(event) {
     event.preventDefault();
     $("div#question2").hide();
-    $("div#question3").slideToggle();
+    $("div#question3").show();
   });
 
   $("#q3Next").click(function(event) {
     event.preventDefault();
     $("div#question3").hide();
-    $("div#question4").slideToggle();
+    $("div#question4").show();
   });
 });

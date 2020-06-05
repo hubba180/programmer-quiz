@@ -25,10 +25,17 @@
 
 body {
   background-color: rgb(168, 191, 218);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#output p {
+  font-size: 5em;
 }
 
 .jumbotron {
   margin-bottom: 0px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .jumbotron:hover {
@@ -58,9 +65,8 @@ body {
 }
 
 #introWords {
-  /* color: white; */
+  color: white;
   background-color: teal;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 #question1, #question2, #question3, #question4 {
@@ -75,4 +81,17 @@ body {
   display: block;
   text-align: center;
   margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#output:hover {
+  background-color: rgb(104, 167, 88);
+  transition: 0.8s;
+}
+
+#footer {
+  background-color: #333c49;
+  opacity: 80%;
+  color: white;
+  border-radius: 5px;
 }
