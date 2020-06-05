@@ -1,7 +1,33 @@
+@media screen and (max-height: 870px) {
+  img {
+    width: 100vw;
+    height: 30vh;
+  }
+}
+
+@media screen and (min-height: 871px) {
+  img {
+    width: 100vw;
+    height: 50vh;
+  }
+}
+
+
+.jumbotron {
+  margin-bottom: 0px;
+}
+
 #question2, #question3, #question4 {
   display: none;
 }
 
 #cSharp, #ruby, #python {
   display: none;
+}
+
+#output {
+  background-image: url(../img/damian-markutt.jpg);
+  display: block;
+  text-align: center;
+  margin-top: 100px;
 }
