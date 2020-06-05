@@ -18,8 +18,8 @@
     <p class="panel panel-body">Many aspiring programmers find it hard to choose from the seemingly endless list of programming languages and while it might be nice to hear that most programming concepts carry over from language to language, that doesn't always make it easier when choosing one to learn. Fortunately for you, this tool has been created to be an aid in your programming quest to learn the best language. Below you will take a short quiz where you will enter some basic information about yourself. Then, we will process your answers to generate what we think will be the best language for you.<br><br> May the Force be with you!</p>
   </div>
   <div class="container">
-    <form id="question1">
-      <div>
+    <form id="questions">
+      <div id="question1">
         <h4>Which of these animals do you identify with the most?</h4>
         <div class="radio">
           <label>
@@ -38,29 +38,70 @@
             <input type="radio" name="animalQ" value="3">Honeybadger
           </label>
         </div>
+        <button type="button" class="btn" id="q1Next">Next</button>
       </div>
-      <button type="submit" class="btn">Submit</button>
+      <div id="question2">
+        <h4>If you were in a burning house and you could only escape with one of the following, which would it be?</h4>
+        <div class="radio">
+          <label>
+            <input type="radio" name="burningHouseQ" value="1">Your Grandma's chihuahua that's nipped your ankle too many times to count
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="burningHouseQ" value="2">
+            Your completely illegal Kangaroo
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="burningHouseQ" value="3">Your laptop for coding
+          </label>
+        </div>
+        <button type="button" class="btn" id="q2Next">Next</button>
+      </div>
+      <div id="question3">
+        <h4>Which is most important?</h4>
+        <div class="radio">
+          <label>
+            <input type="radio" name="importantQ" value="1">Gettin jiggy with it'
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="importantQ" value="2">Exposing once and for all that UFO's built the pyramids
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="importantQ" value="3">Saying fuck it because you suddenly realized that when the Gregorian calander was adopted in 1582 there was an 8 year loss which means that the Mayan calander's date for 2012 is actually in 2020...
+          </label>
+        </div>
+        <button type="button" class="btn" id="q3Next">Next</button>
+      </div>
+      <div id="question4">
+        <h4>A genie has popped out of a lamp and offered to give you any of the following wishes, which would you choose?</h4>
+        <div class="radio">
+          <label>
+            <input type="radio" name="genieQ" value="1">Sausage hands: the ability to shoot sausages as projectiles from your hands
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="genieQ" value="2">The tax defier: the ability to persuade anyone into doing your taxes for you
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="genieQ" value="3">Book sense: you can look at any book and know instantly and definitively whether you'll enjoy it
+          </label>
+        </div>
+        <button type="submit" class="btn">Finish</button>
+      </div>
     </form>
-    <form>
-      <h4>If you were in a burning house and you could only escape with one of the following, which would it be?</h4>
-      <div class="radio">
-        <label>
-          <input type="radio" name="burningHouseQ" value="1">Your Grandma's chihuahua that's nipped your ankle too many times to count
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="burningHouseQ" value="2">
-          Your completely illegal Kangaroo
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="burningHouseQ" value="3">Your laptop for coding
-        </label>
-      </div>
-      <button type="submit" class="btn">Finish</button>
-    </form>
+    <div id="output">
+
+    </div>
   </div>
 </body>
 </html>

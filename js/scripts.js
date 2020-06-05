@@ -1,14 +1,43 @@
 // Business Logic
-let number = null;
-
 function check(number) {
-  let score = null;
+  if (number >= 4 && number <= 7) {
+    //do something
+  } else if (number > 7 && number <= 9) {
+    // do something else
+  } else {
+    // do another thing
+  }
 }
 
 // User Interface Logic
 
 $(document).ready(function() {
-  $("form#question1").submit(function(event) {
-    const answer = $()
+  
+  $("form#questions").submit(function(event) {
+    const answer1 = parseInt($("input:radio[name=animalQ]:checked").val());
+    const answer2 = parseInt($("input:radio[name=burningHouseQ]:checked").val());
+    const answer3 = parseInt($("input:radio[name=importantQ]:checked").val());
+    const answer4 = parseInt($("input:radio[name=genieQ]:checked").val());
+    const score = answer1 + answer2 + answer3 + answer4;
+    event.preventDefault();
+    $("div#output").text(score);
+  });
+
+  $("#q1Next").click(function(event) {
+    event.preventDefault();
+    $("div#question1").hide();
+    $("div#question2").slideToggle();
+  });
+
+  $("#q2Next").click(function(event) {
+    event.preventDefault();
+    $("div#question2").hide();
+    $("div#question3").slideToggle();
+  });
+
+  $("#q3Next").click(function(event) {
+    event.preventDefault();
+    $("div#question3").hide();
+    $("div#question4").slideToggle();
   });
 });
