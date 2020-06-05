@@ -57,7 +57,6 @@
   }
 }
 
-
 #enterName {
   width: 200px;
 }
@@ -69,6 +68,10 @@ body {
 
 button {
   margin-top: 10px;
+}
+
+button:hover {
+  transition: 0.5s;
 }
 
 .text {
